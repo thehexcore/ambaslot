@@ -13,7 +13,7 @@
 }
 header, body {
     background-color: #333;
-    font-family: sans-serif;
+    font-family: Sans-Serif;
 }
 .wlee {
     padding: 1rem;
@@ -31,10 +31,10 @@ nav > a {
     color: #fff;
     font-weight: bold;
     font-size: 1.3rem;
+    font-family: Sans-Serif;
     border: 2px solid gold;
     border-radius: 5px;
     padding: 8px;
-    font-family: sans-serif;
 }
 nav > p {
     color: #eee;
@@ -163,6 +163,8 @@ function check(spin1, spin2, spin3) {
 }
 
 spinButton.addEventListener('click', async () => {
+    wleeP.style.color = '#fff'
+    
     if (bet.value < 10000) {
         alert('Yang bener aja njing')
         return
